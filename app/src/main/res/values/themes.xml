@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ShoppingApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    
+    <style name="ToolBarTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title" >
+        
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        
+    </style>
+
+    <style name="PopupMenuTheme" parent= "ThemeOverlay.AppCompat.Light">
+        <item name="popupMenuBackground">@color/statusBarColorWhite</item>
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+    
+
+
+    <style name="Theme.ShoppingApp" parent="Base.Theme.ShoppingApp" />
+</resources>

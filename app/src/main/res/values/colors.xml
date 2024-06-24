@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_brown">#987554</color>
+    <color name="dark_brown">#654321</color>
+    <color name="light_blue">#007FFF</color>
+    <color name="switch_thumb">#2657ff</color>
+    <color name="switch_track">#7896ff</color>
+    <color name="view_color">#DEDEDE</color>
+    <color name="border_color">#99CCDD</color>
+    <color name="hint_color">#A9A9A9</color>
+
+    <color name="statusBarColorWhite">#FFFFFF</color>
+</resources>

@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_text_bg"
+    android:paddingStart="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Add Profile Details"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/close_btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:src="@drawable/ic_close" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Gender"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+                android:id="@+id/genderGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/maleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/toggle_button_bg"
+                    android:checked="false"
+                    android:textAllCaps="false"
+                    android:textColor="@color/toggle_button_color"
+                    android:textOff="Male"
+                    android:textOn="Male"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <ToggleButton
+                    android:id="@+id/femaleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/toggle_button_bg"
+                    android:checked="false"
+                    android:textAllCaps="false"
+                    android:textColor="@color/toggle_button_color"
+                    android:textOff="Female"
+                    android:textOn="Female"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <ToggleButton
+                    android:id="@+id/othersButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/toggle_button_bg"
+                    android:checked="false"
+                    android:textAllCaps="false"
+                    android:textColor="@color/toggle_button_color"
+                    android:textOff="Others"
+                    android:textOn="Others"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Food"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+                android:id="@+id/foodGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp">
+
+                    <ToggleButton
+                        android:id="@+id/eggButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/toggle_button_bg"
+                        android:checked="false"
+                        android:textAllCaps="false"
+                        android:textColor="@color/toggle_button_color"
+                        android:textOff="Eggetarian"
+                        android:textOn="Eggetarian"
+                        android:textSize="16sp"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <ToggleButton
+                        android:id="@+id/vegButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="15dp"
+                        android:background="@drawable/toggle_button_bg"
+                        android:checked="false"
+                        android:textAllCaps="false"
+                        android:textColor="@color/toggle_button_color"
+                        android:textOff="Vegetarian"
+                        android:textOn="Vegetarian"
+                        android:textSize="16sp"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <ToggleButton
+                        android:id="@+id/nonvegButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="15dp"
+                        android:background="@drawable/toggle_button_bg"
+                        android:checked="false"
+                        android:textAllCaps="false"
+                        android:textColor="@color/toggle_button_color"
+                        android:textOff="Non-Vegetarian"
+                        android:textOn="Non-Vegetarian"
+                        android:textSize="16sp"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/veganButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/toggle_button_bg"
+                        android:checked="false"
+                        android:textAllCaps="false"
+                        android:textColor="@color/toggle_button_color"
+                        android:textOff="Vegan"
+                        android:textOn="Vegan"
+                        android:textSize="16sp"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+                </LinearLayout>
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Marital"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+                android:id="@+id/maritalGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/marriedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/toggle_button_bg"
+                    android:checked="false"
+                    android:textAllCaps="false"
+                    android:textColor="@color/toggle_button_color"
+                    android:textOff="Married"
+                    android:textOn="Married"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <ToggleButton
+                    android:id="@+id/unmarriedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/toggle_button_bg"
+                    android:checked="false"
+                    android:textAllCaps="false"
+                    android:textColor="@color/toggle_button_color"
+                    android:textOff="Unmarried"
+                    android:textOn="Unmarried"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Number of family"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+                android:id="@+id/familyGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/btn1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle_toggle_bg"
+                    android:checked="false"
+                    android:textAllCaps="false"
+                    android:textColor="@color/toggle_button_color"
+                    android:textOff="1"
+                    android:textOn="1"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <ToggleButton
+                    android:id="@+id/btn2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/circle_toggle_bg"
+                    android:checked="false"
+                    android:textAllCaps="false"
+                    android:textColor="@color/toggle_button_color"
+                    android:textOff="2"
+                    android:textOn="2"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <ToggleButton
+                    android:id="@+id/btn3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/circle_toggle_bg"
+                    android:checked="false"
+                    android:textAllCaps="false"
+                    android:textColor="@color/toggle_button_color"
+                    android:textOff="3"
+                    android:textOn="3"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <ToggleButton
+                    android:id="@+id/btn4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/circle_toggle_bg"
+                    android:checked="false"
+                    android:textAllCaps="false"
+                    android:textColor="@color/toggle_button_color"
+                    android:textOff="4"
+                    android:textOn="4"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <ToggleButton
+                    android:id="@+id/btn5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/circle_toggle_bg"
+                    android:checked="false"
+                    android:textAllCaps="false"
+                    android:textColor="@color/toggle_button_color"
+                    android:textOff="5"
+                    android:textOn="5"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <ToggleButton
+                    android:id="@+id/btn6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/circle_toggle_bg"
+                    android:checked="false"
+                    android:textAllCaps="false"
+                    android:textColor="@color/toggle_button_color"
+                    android:textOff="6"
+                    android:textOn="6"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <ToggleButton
+                    android:id="@+id/btn7"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/circle_toggle_bg"
+                    android:checked="false"
+                    android:textAllCaps="false"
+                    android:textColor="@color/toggle_button_color"
+                    android:textOff=">6"
+                    android:textOn=">6"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Birthday"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#301934"/>
+
+                    <TextView
+                        android:id="@+id/birthDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="DD/MM/YYYY"
+                        android:textColor="@color/dark_brown"
+                        android:background="@drawable/custom_text_bg"
+                        android:textSize="20sp"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Anniversary"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#301934"/>
+
+                    <TextView
+                        android:id="@+id/anniversary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/dark_brown"
+                        android:text="DD/MM/YYYY"
+                        android:background="@drawable/custom_text_bg"
+                        android:textSize="20sp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Characteristics"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+                android:id="@+id/characteristicGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp">
+
+                    <ToggleButton
+                        android:id="@+id/teaButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/toggle_button_bg"
+                        android:checked="false"
+                        android:textAllCaps="false"
+                        android:textColor="@color/toggle_button_color"
+                        android:textOff="Tea Lover"
+                        android:textOn="Tea Lover"
+                        android:textSize="16sp"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <ToggleButton
+                        android:id="@+id/coffeeButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="15dp"
+                        android:background="@drawable/toggle_button_bg"
+                        android:checked="false"
+                        android:textAllCaps="false"
+                        android:textColor="@color/toggle_button_color"
+                        android:textOff="Coffee Lover"
+                        android:textOn="Coffee Lover"
+                        android:textSize="16sp"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <ToggleButton
+                        android:id="@+id/healthButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="15dp"
+                        android:background="@drawable/toggle_button_bg"
+                        android:checked="false"
+                        android:textAllCaps="false"
+                        android:textColor="@color/toggle_button_color"
+                        android:textOff="Health Freak"
+                        android:textOn="Health Freak"
+                        android:textSize="16sp"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/cleanButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/toggle_button_bg"
+                        android:checked="false"
+                        android:textAllCaps="false"
+                        android:textColor="@color/toggle_button_color"
+                        android:textOff="Clean Freak"
+                        android:textOn="Clean Freak"
+                        android:textSize="16sp"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+                    <ToggleButton
+                        android:id="@+id/cookingButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="15dp"
+                        android:background="@drawable/toggle_button_bg"
+                        android:checked="false"
+                        android:textAllCaps="false"
+                        android:textColor="@color/toggle_button_color"
+                        android:textOff="Enjoy Cooking Meals"
+                        android:textOn="Enjoy Cooking Meals"
+                        android:textSize="16sp"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/sweetButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/toggle_button_bg"
+                        android:checked="false"
+                        android:textAllCaps="false"
+                        android:textColor="@color/toggle_button_color"
+                        android:textOff="Sweet tooth"
+                        android:textOn="Sweet tooth"
+                        android:textSize="16sp"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+                    <ToggleButton
+                        android:id="@+id/readyEatButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="15dp"
+                        android:background="@drawable/toggle_button_bg"
+                        android:checked="false"
+                        android:textAllCaps="false"
+                        android:textColor="@color/toggle_button_color"
+                        android:textOff="Rely on ready to eat"
+                        android:textOn="Rely on ready to eat"
+                        android:textSize="16sp"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+                </LinearLayout>
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/saveDetailsTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:textAlignment="center"
+                android:background="@drawable/save_button_bg"
+                android:text="Save Profile Details"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/light_blue"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
